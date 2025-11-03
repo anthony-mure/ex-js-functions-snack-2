@@ -28,18 +28,18 @@ console.log(eseguiOperazione(3, 4, moltiplica));
 Crea un generatore di funzioni creaTimer
 -Scrivi una funzione creaTimer che accetta un tempo (in ms) e restituisce una nuova funzione che avvia un setTimeout per stampare "Tempo scaduto!". */
 
-function creaTimer(tempo) {
+/* function creaTimer(tempo) {
 
-  return () => {
-    setTimeout(() => {
-      console.log('Tempo scaduto!');
-    }, tempo);
-  }
+ return () => {
+   setTimeout(() => {
+     console.log('Tempo scaduto!');
+   }, tempo);
+ }
 
 };
 
 const timer3s = creaTimer(3000);
-timer3s();
+timer3s(); */
 
 /*SNACK 5
 Crea una funzione stampaOgniSecondo con setInterval.
@@ -74,5 +74,22 @@ Crea un contatore automatico con setInterval
 
 const contaOgniSecondo = creaContatoreAutomatico(1000);
 contaOgniSecondo();  */
+
+/*SNACK 7
+Crea una funzione che ferma un timer dopo un certo tempo
+-Scrivi una funzione eseguiEferma che accetta un messaggio, un tempo di avvio e un tempo di stop. Il messaggio deve essere stampato a intervalli regolari, ma si deve fermare dopo il tempo di stop. */
+
+function eseguieferma(messaggio, intervallo, durata) {
+
+  const timer = setInterval(() => {
+    console.log(messaggio);
+  }, intervallo);
+
+  setTimeout(() => {
+    clearInterval(timer);
+  }, durata)
+}
+
+eseguieferma('Sto eseguendo...', 1000, 6000);
 
 
