@@ -5,12 +5,14 @@ Crea una funzione che somma due numeri.
 -Quindi, riscrivi la funzione somma con la sintassi delle arrow functions.*/
 
 const somma = (a, b) => a + b;
+console.log(somma(1, 2));
 
 /*SNACK 2
 Crea una arrow function che calcola il quadrato di un numero.
 -Definisci una funzione chiamata quadrato che accetta un numero e restituisce il suo quadrato in una sola riga. */
 
 const quadrato = n => n * n;
+console.log(quadrato(2));
 
 /*SNACK 3
 Crea una funzione eseguiOperazione
@@ -38,3 +40,21 @@ function creaTimer(tempo) {
 
 const timer3s = creaTimer(3000);
 timer3s();
+
+/*SNACK 5
+Crea una funzione stampaOgniSecondo con setInterval.
+-Definisci una funzione che accetta un messaggio e lo stampa ogni secondo.
+
+Nota: Questa funzione creerà un loop infinito. Interrompilo manualmente o usa clearInterval() in un altro script. */
+
+/*function stampaOgniSecondo(messaggio) {
+
+  setInterval(() => {
+    console.log(messaggio);
+  }, 1000);
+
+};
+
+stampaOgniSecondo('Ciao');*/
+
+
