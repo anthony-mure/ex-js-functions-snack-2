@@ -5,3 +5,9 @@ Crea una funzione che somma due numeri.
 -Quindi, riscrivi la funzione somma con la sintassi delle arrow functions.*/
 
 const somma = (a, b) => a + b;
+
+/*SNACK 2
+Crea una arrow function che calcola il quadrato di un numero.
+-Definisci una funzione chiamata quadrato che accetta un numero e restituisce il suo quadrato in una sola riga. */
+
+const quadrato = n => n * n;
