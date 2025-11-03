@@ -57,4 +57,22 @@ Nota: Questa funzione creerà un loop infinito. Interrompilo manualmente o usa c
 
 stampaOgniSecondo('Ciao');*/
 
+/*SNACK 6
+Crea un contatore automatico con setInterval
+-Definisci una funzione creaContatoreAutomatico che accetta un intervallo di tempo e restituisce una funzione che avvia un setInterval, incrementando un contatore e stampandolo. */
+
+/* function creaContatoreAutomatico(intervallo) {
+
+  let count = 0;
+  return () => {
+    setInterval(() => {
+      count++;
+      console.log(`Il contatore è ${count}`);
+    }, intervallo)
+  }
+};
+
+const contaOgniSecondo = creaContatoreAutomatico(1000);
+contaOgniSecondo();  */
+
 
